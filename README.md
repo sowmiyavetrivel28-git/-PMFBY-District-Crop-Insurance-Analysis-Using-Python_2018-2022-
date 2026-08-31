@@ -1,48 +1,79 @@
-# PMFBY District-Level Crop Insurance Performance Analysis (2018–2022)
+# 🌾 PMFBY District-Level Crop Insurance Performance Analysis Using Python (2018–2022)
 
-##  Project Overview
-
-This project analyzes district-level data from the **Pradhan Mantri Fasal Bima Yojana (PMFBY)** for the period **2018–2022**.
-
-The analysis focuses on understanding farmer participation, seasonal patterns, Loanee and Non-Loanee participation, crop insurance coverage, premium contributions, demographic patterns, and district-level performance.
-
-The project uses **Python, Pandas, NumPy, Matplotlib, and Seaborn** for data cleaning, feature engineering, exploratory data analysis, and visualization.
-
----
-
-##  Project Objectives
-
-1. **Analyze PMFBY participation across states and districts from 2018–2022.**
-
-2. **Compare PMFBY participation between Kharif and Rabi seasons.**
-
-3. **Analyze Loanee and Non-Loanee farmer participation patterns.**
-
-4. **Evaluate crop insurance coverage across districts.**
-
-5. **Analyze premium and financial contributions of farmers and governments.**
-
-6. **Examine participation patterns based on gender, social category, and farmer type.**
-
-7. **Identify high- and low-performing districts based on participation, insurance coverage, and financial indicators.**
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Analysis-013243?logo=numpy)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c)
+![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-4c72b0)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-F9AB00?logo=googlecolab)
 
 ---
 
-##  Feature Engineering
+## 📌 Project Overview
 
-Four meaningful features were derived from the existing dataset:
+This project performs a **district-level analysis of Pradhan Mantri Fasal Bima Yojana (PMFBY)** data for **2018–2022** using Python.
 
-| Feature | Description |
+The analysis focuses on:
+
+- Farmer participation
+- Seasonal participation
+- Insurance coverage
+- Gender-wise participation
+- Farmer-type participation
+- District performance
+- Premium and government contributions
+
+The project applies **data cleaning, feature engineering, statistical analysis and exploratory data analysis (EDA)** to identify meaningful patterns and insights from the PMFBY dataset.
+
+---
+
+## 🎯 Objectives
+
+### 1. Participation & Seasonal Analysis
+
+- Analyse PMFBY participation across states and districts from 2018–2022.
+- Compare PMFBY participation between **Kharif and Rabi** seasons.
+
+### 2. Farmer Participation Analysis
+
+- Analyse **Loanee and Non-Loanee** farmer participation.
+- Examine **gender-wise** participation.
+- Analyse participation by **Small, Marginal and Other** farmer categories.
+
+### 3. Insurance & Financial Analysis
+
+- Analyse **Area Insured, Insurance Units and Sum Insured**.
+- Analyse **Gross Premium, Farmer Share, GOI Share and State Share**.
+- Compare **Total Premium Contribution** and **Total Government Share**.
+
+### 4. District Performance Assessment
+
+- Identify high- and low-performing districts.
+- Analyse district performance based on:
+  - Total Applications
+  - Insurance Coverage
+  - Insurance Value per Application
+  - Financial indicators
+
+---
+
+## 📊 Dataset Information
+
+| Attribute | Details |
 |---|---|
-| `Total_Applications` | Total Loanee + Non-Loanee applications |
-| `Loanee_Share_%` | Percentage of applications from Loanee farmers |
-| `Government_Contribution` | GOI Share + State Government Share |
-| `Farmer_Premium_Share_%` | Percentage of Gross Premium contributed by farmers |
+| Dataset | PMFBY District-Level Crop Insurance Data |
+| Period | 2018–2022 |
+| Records | 6,161 |
+| Original Variables | 28 |
+| Geography | State and District |
+| Seasons | Kharif and Rabi |
+| Domain | Agriculture / Crop Insurance |
 
-These derived features are used to support the project objectives and generate meaningful business insights.
+The dataset contains participation, insurance, demographic and financial variables.
 
 ---
-##  Technologies Used
+
+## 🛠️ Tools & Technologies
 
 - **Python**
 - **Pandas**
@@ -50,13 +81,37 @@ These derived features are used to support the project objectives and generate m
 - **Matplotlib**
 - **Seaborn**
 - **Google Colab**
-  
 
-##  Author
+---
 
-**Sowmiya M**
+## 🔄 Project Workflow
 
-**Aspiring Data Analyst**
-
-Skills: Python | SQL | Excel | Power BI | Tableau | Data Analysis | Data Visualization
+```text
+Raw Dataset
+     ↓
+Data Inspection
+     ↓
+Data Cleaning
+     ↓
+Missing Value Treatment
+     ↓
+Data Transformation
+     ↓
+Feature Engineering
+     ↓
+Statistical Analysis
+     ↓
+Univariate Analysis
+     ↓
+Bivariate Analysis
+     ↓
+Multivariate Analysis
+     ↓
+Insights & Interpretation
+     ↓
+Key Findings
+     ↓
+Analytical Framework
+     ↓
+Recommendations
 
