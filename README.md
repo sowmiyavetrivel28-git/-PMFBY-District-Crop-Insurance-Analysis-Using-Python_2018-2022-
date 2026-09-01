@@ -157,8 +157,7 @@ The raw PMFBY dataset was cleaned and prepared before analysis to improve data q
 8. **Final data validation**
    - Performed final null-value checks and verified the cleaned dataset structure before EDA and statistical analysis.
 
-The notebook explicitly defines the Stage 2 workflow as duplicate handling, missing-value handling, unnecessary-column removal, optional outlier treatment, data-type conversion, transformation/wrangling and final EDA. fileciteturn16file0L15-L31
-
+The notebook explicitly defines the Stage 2 workflow as duplicate handling, missing-value handling, unnecessary-column removal, optional outlier treatment, data-type conversion, transformation/wrangling and final EDA. 
 ---
 
 ## ⚙️ Feature Engineering
