@@ -172,6 +172,125 @@ These measures are used to understand the central tendency, variability, distrib
 
 ---
 
+# 📊 Statistical Analysis Results
+
+The statistical analysis was performed on four key numerical variables: **Total Applications, Area Insured, Sum Insured, and Gross Premium**.
+
+## 1. Measures of Central Tendency
+
+Mean, Median and Mode were calculated to understand the typical values and distribution of the major PMFBY variables. The results show a considerable difference between mean and median for all four variables, indicating right-skewed distributions. fileciteturn10file0L97-L104
+
+| Variable | Mean | Median | Mode |
+|---|---:|---:|---:|
+| Total Applications | 59,967.75 | 7,723.00 | 0.00 |
+| Area Insured | 41.40 | 4.30 | 0.00 |
+| Sum Insured | 15,993.39 | 2,554.02 | 0.00 |
+| Gross Premium | 2,255.69 | 202.15 | 0.00 |
+
+### Interpretation
+
+- **Total Applications:** The large difference between mean and median indicates that a few districts have very high application counts.
+- **Area Insured:** The mean is much higher than the median, indicating that some districts have considerably larger insured areas.
+- **Sum Insured:** The difference between mean and median indicates the presence of high-value insurance observations.
+- **Gross Premium:** The mean is considerably higher than the median, indicating a right-skewed premium distribution.
+- **Overall:** All four variables are right-skewed, and the mode is **0.00** for each variable. fileciteturn9file1L10-L18
+
+![Central Tendency Analysis](images/central_tendency.png)
+
+---
+
+## 2. Variance
+
+Variance measures how widely the observations are spread around the mean. The PMFBY results show substantial variation across all four variables.
+
+| Variable | Variance |
+|---|---:|
+| Total Applications | 2.607710 × 10¹⁰ |
+| Area Insured | 1.560372 × 10⁴ |
+| Sum Insured | 1.088210 × 10⁹ |
+| Gross Premium | 3.828380 × 10⁷ |
+
+### Interpretation
+
+- **Total Applications** shows very high dispersion in farmer participation across districts.
+- **Area Insured** shows considerable variation in crop insurance coverage.
+- **Sum Insured** shows substantial variation in insured amounts.
+- **Gross Premium** also shows considerable variation between districts.
+- **Overall:** The high variance values indicate that PMFBY observations are not evenly distributed across districts.
+
+![Variance Analysis](images/variance.png)
+
+---
+
+## 3. Standard Deviation
+
+Standard deviation indicates the average spread of observations around the mean in the original units.
+
+| Variable | Standard Deviation |
+|---|---:|
+| Total Applications | 161,484.05 |
+| Area Insured | 124.91 |
+| Sum Insured | 32,988.04 |
+| Gross Premium | 6,187.39 |
+
+### Interpretation
+
+- **Total Applications:** The standard deviation of **161,484.05** indicates a very high spread in farmer participation.
+- **Area Insured:** The standard deviation of **124.91** indicates considerable variation in insured area.
+- **Sum Insured:** The standard deviation of **32,988.04** indicates substantial variation in insured amounts.
+- **Gross Premium:** The standard deviation of **6,187.39** indicates considerable variation in premium values.
+- **Overall:** PMFBY participation, insurance coverage and financial values vary considerably across districts.
+
+![Standard Deviation Analysis](images/standard_deviation.png)
+
+---
+
+## 4. Skewness
+
+Skewness measures the direction and degree of asymmetry in a distribution.
+
+| Variable | Skewness |
+|---|---:|
+| Total Applications | 6.442054 |
+| Area Insured | 11.736275 |
+| Sum Insured | 4.106434 |
+| Gross Premium | 5.459718 |
+
+### Interpretation
+
+- **Total Applications:** A skewness of **6.442054** indicates a highly right-skewed distribution.
+- **Area Insured:** A skewness of **11.736275** indicates a very highly right-skewed distribution.
+- **Sum Insured:** A skewness of **4.106434** indicates strong right skewness.
+- **Gross Premium:** A skewness of **5.459718** indicates a highly right-skewed distribution.
+- **Overall:** All four variables are positively skewed, meaning most observations are at relatively lower values while a smaller number have very high values.
+
+![Skewness Analysis](images/skewness.png)
+
+---
+
+## 5. Kurtosis
+
+Kurtosis helps identify heavy-tailed distributions and the presence of extreme observations.
+
+| Variable | Kurtosis |
+|---|---:|
+| Total Applications | 61.225004 |
+| Area Insured | 249.886077 |
+| Sum Insured | 27.332569 |
+| Gross Premium | 38.954620 |
+
+### Interpretation
+
+- **Total Applications:** A kurtosis of **61.225004** indicates a highly leptokurtic distribution with extreme observations.
+- **Area Insured:** A kurtosis of **249.886077** indicates an extremely leptokurtic distribution with very heavy tails.
+- **Sum Insured:** A kurtosis of **27.332569** indicates a highly leptokurtic distribution.
+- **Gross Premium:** A kurtosis of **38.954620** indicates a highly leptokurtic distribution with extreme premium values.
+- **Overall:** All four variables have high positive kurtosis, indicating heavy tails and the presence of extreme observations.
+
+![Kurtosis Analysis](images/kurtosis.png)
+
+---
+
 # 📈 Exploratory Data Analysis
 
 # 1. Univariate Analysis
@@ -650,10 +769,8 @@ This project demonstrates practical skills in **data preprocessing, feature engi
 
 # 👩‍💻 Author
 
-**sowmiya M**
+**SOWMIYA M**
 
 ### Skills Demonstrated
-
-Python · Pandas · NumPy · Matplotlib · Seaborn · EDA · Data Cleaning · Feature Engineering · Statistical Analysis · Data Visualization · Business Analysis
 
 `Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `EDA` · `Data Cleaning` · `Feature Engineering` · `Statistical Analysis` · `Data Visualization` · `Business Analysis`
