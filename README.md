@@ -29,18 +29,24 @@ The project applies **data cleaning, data transformation, feature engineering, s
 
 ## 🎯 Objectives
 
-1. To analyse PMFBY farmer participation from 2018 to 2022.
-2. To compare participation between Kharif and Rabi seasons.
-3. To analyse Loanee and Non-Loanee farmer participation.
-4. To examine gender-wise farmer participation.
-5. To analyse Small, Marginal and Other farmer participation.
-6. To analyse Insurance Unit coverage.
-7. To study the relationship between Area Insured and Sum Insured.
-8. To analyse state-wise participation across years.
-9. To identify top districts based on Insurance Value per Application.
-10. To analyse Total Premium Contribution and Government Share.
-11. To apply descriptive statistical techniques.
-12. To generate meaningful findings and recommendations from PMFBY data.
+## 1. Participation & Seasonal Analysis
+
+- Analyze PMFBY participation across states and districts from 2018–2022.
+- Compare PMFBY participation between Kharif and Rabi seasons.
+
+## 2. Farmer Participation Analysis
+
+- Analyze the participation pattern of Loanee and Non-Loanee farmers.
+- Examine gender and farmer-type participation patterns.
+
+## 3. Insurance & Financial Analysis
+
+- Evaluate crop insurance coverage across districts using insured area, insurance units, and sum insured.
+- Analyze gross premium and the financial contributions of farmers, State Governments, and the Government of India.
+
+## 4. District Performance Assessment
+
+- Identify high- and low-performing districts based on PMFBY participation, insurance coverage, and financial indicators.
 
 ---
 
@@ -114,6 +120,44 @@ Recommendations
      ↓
 Conclusion
 ```
+
+---
+
+## 🧹 Data Cleaning
+
+The raw PMFBY dataset was cleaned and prepared before analysis to improve data quality and consistency. The cleaning process followed the steps implemented in the Python notebook.
+
+### Cleaning Steps
+
+1. **Remove unnecessary columns**
+   - Removed columns that were not required for the analysis.
+
+2. **Handle duplicate records**
+   - Checked the dataset for duplicate records and handled them during data preparation.
+
+3. **Handle missing values**
+   - Checked missing values across relevant columns.
+   - Missing values were handled using appropriate imputation or removal where required.
+   - Derived `Insurance_Per_Application` missing values were filled with `0`.
+
+4. **Clean text and category fields**
+   - Checked state and district names for inconsistent formatting.
+   - Checked and handled leading/trailing spaces.
+   - Checked capitalization and title-case consistency.
+
+5. **Check numerical fields**
+   - Reviewed farmer counts, participation, insurance and financial variables for invalid or unusual values.
+
+6. **Check data types**
+   - Verified and converted data types where required for analysis.
+
+7. **Outlier review**
+   - Extreme observations were reviewed where necessary before statistical analysis.
+
+8. **Final data validation**
+   - Performed final null-value checks and verified the cleaned dataset structure before EDA and statistical analysis.
+
+The notebook explicitly defines the Stage 2 workflow as duplicate handling, missing-value handling, unnecessary-column removal, optional outlier treatment, data-type conversion, transformation/wrangling and final EDA. fileciteturn16file0L15-L31
 
 ---
 
